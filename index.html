@@ -14,37 +14,39 @@
 <input type="text" class="input">
 
 <div>
-    <button>1</button>
-        <button>2</button>
-    <button>3</button>
-    <button class="operator-btn">x</button>
-    <button class="operator-btn">÷</button>
+    <button onclick="displayNumber('1')">1</button>
+        <button onclick="displayNumber('2')">2</button>
+    <button onclick="displayNumber('3')">3</button>
+    <button class="operator-btn" onclick="displayOperator('*')">x</button>
+    <button class="operator-btn" onclick="displayOperator('/')">÷</button>
 </div>
 
 <div>
-    <button>4</button>
-        <button>5</button>
-    <button>6</button>
-    <button class="operator-btn">+</button>
-    <button class="operator-btn">-</button>
+    <button onclick="displayNumber('4')">4</button>
+        <button onclick="displayNumber('5')">5</button>
+    <button onclick="displayNumber('6')">6</button>
+    <button class="operator-btn" onclick="displayOperator('+')">+</button>
+    <button class="operator-btn" onclick="displayOperator('-')">-</button>
 </div>
 <div>
-    <button>7</button>
-        <button>8</button>
-    <button>9</button>
-    <button class="operator-btn">%</button>
-    <button class="operator-btn">^</button>
+    <button onclick="displayNumber('7')">7</button>
+        <button onclick="displayNumber('8')">8</button>
+    <button onclick="displayNumber('9')">9</button>
+    <button class="operator-btn" onclick="displayOperator('%')">%</button>
+    <button class="operator-btn" onclick="displayOperator('^')">^</button>
 </div>
 <div>
     <button>.</button>
-        <button>0</button>
-    <button><img src="./images/image 1.png" alt="delete" id="btn-img"></button>
-        <button class="clear-btn">AC</button>
-<button class="equal-btn">=</button>
+        <button onclick="displayNumber('0')">0</button>
+    <button><img src="./images/image 1.png" alt="delete" id="btn-img" onclick="deleteInput()"></button>
+        <button class="clear-btn" onclick="clearInput()">AC</button>
+<button class="equal-btn" onclick="calculator()">=</button>
 </div>
     </div>
 
-
-<script src="index.js"></script>
+    <div class="history-div">
+<textarea type="text" class="history" readonly></textarea>
+</div>
+<script src="index.js" defer></script>
 </body>
 </html>

@@ -90,3 +90,16 @@ background: #F49D1A;
 /* font-size: 52px; */
 }
 
+
+.history{
+   display: flex;
+   justify-content: center;
+   margin: 10px auto;
+    width:fit-content;
+height: 90px;
+border-radius: 20px;
+background: #1d203c;
+    font-family: "Nunito Sans", sans-serif;
+color: #FFFFFF;
+font-size: 60px;
+}
